@@ -6,21 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tugas 2 | Membuat Kalkulator denga Javascript</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="responsive" type="text/css" href="responsive.css">
+     <link rel="responsive" type="text/css" href="responsive.css">
 	<script src="script.js"></script>
 </head>
 <body>
 	<div class="container">
 		<form name="form">
 			<input class="textarea" name="textarea" >
-                        <input onclick="equal()" >
-                  
 		</form>
 		<table>
 			<tr>
 				<td><input type="button" class="button" value="C" onclick="clean()"></td>
 				<td><input type="button" class="button" value="<" onclick="back()"></td>
-				<td><input type="button" class="button" value="/" onclick="insert(' / ')"></td>
+				
+				<td><input type="button" class="button" value="%" onclick="persen()"></td>
 				<td><input type="button" class="button" value="x" onclick="insert(' * ')"></td>
 			</tr>
 			<tr>
@@ -39,12 +38,13 @@
 				<td><input type="button" class="button" value="1" onclick="insert(1)"></td>
 				<td><input type="button" class="button" value="2" onclick="insert(2)"></td>
 				<td><input type="button" class="button" value="3" onclick="insert(3)"></td>
-				<td rowspan="5"><input style="height: 120px;" type="button" class="button" value="=" onclick="equal()"></td>
+				<td><input type="button" class="button" value="/" onclick="insert(' / ')"></td>				
 			</tr>
 
 			<tr>
-				<td colspan="2"><input type="button" class="button" style="width: 100px;" value="0" onclick="insert(0)"></td>
+				<td><input type="button" class="button" value="0" onclick="insert(0)"></td>
 				<td><input type="button" class="button" value="." onclick="insert('.')"></td>
+				<td colspan="2"><input type="button" class="button" style="width: 110px;" value="=" onclick="equal()"></td>
 			</tr>
 		</table>
 	</div>
