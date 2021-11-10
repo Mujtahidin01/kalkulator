@@ -2,6 +2,11 @@ function insert(num){
 	document.form.textarea.value = document.form.textarea.value + num;
 }
 
+function persen(num){
+	document.form.textarea.value = document.form.textarea.value / "100";
+}
+
+
 function equal(){
 	var hasil = document. form.textarea.value;
 	document.form.textarea.value = eval(hasil);
