@@ -17,6 +17,7 @@ body {
 	margin: 2px;
 	border: none;
 	color: white;
+        border-radius: 15px;
 	cursor: pointer;
 	background: #333;
 }
@@ -27,6 +28,7 @@ body {
 	font-size: 30px;
 	border: none;
 	color: black;
+        border-rafius: 15px;
 	cursor: pointer;
 	background: #008087;
 }
