@@ -1,22 +1,21 @@
-function insert(num){
-	document.form.textarea.value = document.form.textarea.value + num;
+// Insert angka ke textview
+function insert(num) {
+  document.form.textarea.value = document.form.textarea.value + num;
 }
 
-function persen(num){
-	document.form.textarea.value = document.form.textarea.value / "100";
+// Fungsi Hitung
+function equal() {
+  var hasil = document.form.textarea.value;
+  document.form.textarea.value = eval(hasil);
 }
 
-
-function equal(){
-	var hasil = document. form.textarea.value;
-	document.form.textarea.value = eval(hasil);
+// Clean
+function clean() {
+  document.form.textarea.value = "";
 }
 
-function clean(){
-	document.form.textarea.value = "";
-}
-
-function back(){
-	var hasil = document.form.textarea.value;
-	document.form.textarea.value = hasil.substring(0,hasil.length-1);
+// Delete
+function back() {
+  var hasil = document.form.textarea.value;
+  document.form.textarea.value = hasil.substring(0, hasil.length - 1);
 }
