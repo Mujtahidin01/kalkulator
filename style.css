@@ -8,6 +8,7 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 	left: 500px;
+        Border-rafius: 15px;
 }
 
 .button{
